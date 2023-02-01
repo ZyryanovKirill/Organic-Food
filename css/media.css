@@ -1,0 +1,344 @@
+/*Адаптив шапки*/
+
+@media (max-width: 1250px) {
+	.header {
+		padding: 50px 10px 43px 10px;
+	}
+}
+
+@media (max-width: 980px) {
+	
+}
+
+@media (max-width: 850px) {
+	.nav {
+		position: absolute;
+		background: #ffffff;
+		left: -50%;
+		right: 100%;
+		bottom: 0;
+		top: 120px;
+		height: 100vh;
+		overflow-x: hidden;
+		border-top: 1px solid #c3c3c3;
+		transition: 0.5s linear;
+		z-index: 10;
+	}
+
+	.nav.active {
+		right: 0;
+		left: 0;
+	}
+
+	.menu {
+		flex-direction: column;
+		padding: 30px;
+		gap: 30px;
+	}
+
+	.burger {
+		display: block;
+		width: 60px;
+		height: 40px;
+		background: url(../img/bars-solid.svg) no-repeat center;
+		transform: rotate(0deg);
+		transition: 0.3s linear;
+	}
+
+	.burger.active {
+		background: url(../img/xmark-solid.svg) no-repeat center;
+		transform: rotate(180deg);
+	}
+}
+
+@media (max-width: 768px) {
+	.header-logo {
+		width: 45px;
+	}
+
+	.header-link {
+		display: none;
+	}
+
+	.cart {
+		margin: 0 5px 0 20px;
+	}
+}
+
+@media (max-width: 590px) {
+	
+}
+
+@media (max-width: 450px) {
+	.form {
+		display: none;
+	}
+
+	.cart {
+		margin: 0 5px 0 0px;
+	}
+}
+
+/*Адаптив секции hero*/
+
+@media (max-width: 1250px) {
+	.header__fixed {
+		padding: 50px 10px 43px 10px;
+	}
+
+	.hero-inner-wrapper {
+		padding: 93px 10px 33px 10px ;
+		background-size: auto;
+	}
+}
+
+@media (max-width: 980px) {
+	.hero-wrapper {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+	}
+
+	.hero-list {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+		flex: 1;
+		gap: 10px;
+	}
+
+	.hero-item:not(:last-child) {
+		margin-bottom: 0px;
+	}
+
+	.hero-img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 450px) {
+	.hero-title {
+		font-size: 50px;
+		line-height: 70px;
+		text-align: center;
+	}
+}
+
+/*Адаптив секции service*/
+
+@media (max-width: 1250px) {
+	.service {
+		padding: 141px 10px 166px 10px;
+
+	}
+}
+
+@media (max-width: 450px) {
+	.service-item {
+		padding: 40px 20px 40px 20px;
+	}
+
+	.service-item span:first-child {
+		display: none;
+	}
+
+	.service-item:before {
+		display: none;
+	}
+
+	.service-title {
+		font-size: 45px;
+		line-height: 60px;
+		text-align: center;
+	}
+
+	.service-img {
+		background-size: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.service-item {
+		margin: 0 auto 20px;
+	}
+}
+
+@media (max-width: 590px) {
+	.service-img {
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/elips-fruit.png);
+		background-position: bottom 0px center;
+		background-size: auto;
+	}
+
+	.service-wrapper {
+		gap: 50px;
+	}
+}
+
+/*Адаптив секции vegetable*/
+
+@media (max-width: 1250px) {
+	.vegetable-inner-wrapper {
+		padding: 89px 10px 143px 10px;
+	}
+
+	.vegetable-img {
+		max-width: 550px;
+	}
+}
+
+@media (max-width: 768px) {
+	.vegetable-inner-wrapper {
+		background-size: 50%;
+	}
+}
+
+/*Адаптив секции custormes*/
+
+@media (max-width: 1250px) {
+	.custormers {
+		padding: 96px 10px 150px 10px;
+	}
+}
+
+@media (max-width: 980px) {
+	.custormer-title {
+		font-size: 60px;
+		line-height: 80px;
+	}
+
+	.custormer-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.custormer-img {
+		margin-top: 0px;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.custormer-title {
+		font-size: 60px;
+		line-height: 80px;
+		text-align: center;
+	}
+
+	.custormer-text {
+		width: 100%;
+	}
+
+	.custormer-content {
+		width: 100%;
+	}
+
+	.custormer-img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media (max-width: 590px) {
+	.custormer-img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/*Адаптив секции app*/
+
+@media (max-width: 1250px) {
+	.app {
+		padding: 0 10px 140px;
+	}
+
+	.app-wrapper {
+		padding: 0 50px;
+	}
+}
+
+@media (max-width: 980px) {
+	.app-wrapper {
+		padding: 0px;
+		flex-direction: column-reverse;
+	}
+
+	.app-img {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.app-content {
+		width: 100%;
+	}
+
+	.app-text {
+		width: 100%;
+	}
+
+	.app {
+		padding: 0 10px 70px;
+	}
+}
+
+@media (max-width: 590px) {
+	.app-title {
+		font-size: 60px;
+		line-height: 80px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 450px) {
+	.app-title {
+		font-size: 50px;
+		line-height: 65px;
+	}
+}
+
+/*Адаптив секции footer*/
+
+@media (max-width: 1250px) {
+	.footer {
+		padding: 67px 10px 118px;
+	}
+}
+
+@media (max-width: 980px) {
+	.footer-block {
+		width: 48%;
+
+	}
+
+	.footer {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer-block {
+		width: 100%;
+	}
+
+	.footer-title {
+		display: block;
+		margin: 0px 0 40px;
+
+	}
+}
+
+@media (max-width: 450px) {
+	.footer-text {
+		width: 100%;
+	}
+}
